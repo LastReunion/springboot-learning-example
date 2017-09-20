@@ -1,6 +1,5 @@
 package org.spring.springboot.property;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -10,9 +9,9 @@ import org.springframework.stereotype.Component;
  * Created by bysocket on 17/04/2017.
  */
 @Component
-@ConfigurationProperties(prefix = "home")
-public class HomeProperties {
-
+@ConfigurationProperties(prefix = "home")//通过 @ConfigurationProperties(prefix = “home”) 注解，
+public class HomeProperties {            //将配置文件中以 home 前缀的属性值自动绑定到对应的字段中。
+                                         //同是用 @Component 作为 Bean 注入到 Spring 容器中。
     /**
      * 省份
      */

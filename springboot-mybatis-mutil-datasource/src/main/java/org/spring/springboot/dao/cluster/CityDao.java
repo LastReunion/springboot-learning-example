@@ -3,6 +3,7 @@ package org.spring.springboot.dao.cluster;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.spring.springboot.domain.City;
+import org.springframework.stereotype.Repository;
 
 /**
  * 城市 DAO 接口类
@@ -10,6 +11,7 @@ import org.spring.springboot.domain.City;
  * Created by bysocket on 07/02/2017.
  */
 @Mapper
+@Repository
 public interface CityDao {
 
     /**
