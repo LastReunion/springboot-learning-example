@@ -22,6 +22,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
+        <!-- 对应的 spring-data-elasticsearch 版本是 2.1.0.RELEASE。
+             后面数据操作层都是通过该 spring-data-elasticsearch 提供的接口实现。 -->
 
         <!-- Spring Boot Web 依赖 -->
         <dependency>

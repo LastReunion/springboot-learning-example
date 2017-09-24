@@ -8,6 +8,11 @@ import java.io.Serializable;
  * 城市实体类
  *
  * Created by bysocket on 03/05/2017.
+ *
+ * 注意
+   index 配置必须是全部小写，不然会暴异常。
+   org.elasticsearch.indices.InvalidIndexNameException: Invalid index name [cityIndex], must be lowercase
+ *
  */
 @Document(indexName = "cityindex", type = "city")
 public class City implements Serializable{
